@@ -27,7 +27,7 @@
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 * b * h</p>
+                        <p>Area (A) = 0.5 x b x h</p>
                         <div>
                             <input id="base_triangle_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="b"><span class="mr-4 ml-2">cm</span>
                             <input id="height_triangle_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="h"><span class="ml-2">cm</span>
@@ -41,45 +41,112 @@
                     </div>
                 </div>
                 <!-- ractangle card -->
-                <div class="card bg-base-100 w-96 shadow-sm">
+                <div class="card bg-base-100 w-80 shadow-sm">
                     <figure>
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/rectangle.png"
+                        alt="rectangle" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div>
+                            <input id="width_rectangle_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="width"><span class="mr-4 ml-2">cm</span>
+                            <input id="length_rectangle_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="length"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg">Area: <span id="calculate_rectangle_area"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-96 shadow-sm">
+                <!-- parallelogram card -->
+                <div class="card bg-base-100 w-80 shadow-sm">
                     <figure>
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/parallelogram.png"
+                        alt="rectangle" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <div>
+                            <input id="base_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+                            <input id="height_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="height"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg">Area: <span id="calculate_parallelogram_area"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-96 shadow-sm">
+                <!-- rhombus card -->
+                <div class="card bg-base-100 w-80 shadow-sm">
                     <figure>
                         <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes" />
+                        src="images/rhombus.png"
+                        alt="rectangle" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Card Title</h2>
-                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                        <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) = b x h</p>
+                        <div>
+                            <input id="base_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+                            <input id="height_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="height"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg">Area: <span id="calculate_parallelogram_area"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- pentagon card -->
+                <div class="card bg-base-100 w-80 shadow-sm">
+                    <figure>
+                        <img
+                        src="images/pentagon.png"
+                        alt="rectangle" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) = b x h</p>
+                        <div>
+                            <input id="base_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+                            <input id="height_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="height"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg">Area: <span id="calculate_parallelogram_area"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ellipse card -->
+                <div class="card bg-base-100 w-80 shadow-sm">
+                    <figure>
+                        <img
+                        src="images/ellipse.png"
+                        alt="rectangle" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = b x h</p>
+                        <div>
+                            <input id="base_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="base"><span class="mr-4 ml-2">cm</span>
+                            <input id="height_parallelogram_field" class="w-24 text-2xl p-2 rounded-md" type="text" placeholder="height"><span class="ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-lg">Area: <span id="calculate_parallelogram_area"></span>cm<sup>2</sup></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -92,6 +159,8 @@
          </div>
 
          <script src="js/triangle.js"></script>
+         <script src="js/rectangle.js"></script>
+         <script src="js/parallelogram.js"></script>
     </main>
 </body>
 </html>

@@ -20,9 +20,11 @@ function calculateTriangleArea(){
     const height = parseFloat(heightFieldText);
     //console.log(height);
 
+    //calculate triangle area
     const tringleArea = 0.5 * base * height;
-    console.log(tringleArea);
-    
+    //console.log(tringleArea);
+
+    //display triangle area
     const calculateArea = document.getElementById('claculated_triangle_area');
     calculateArea.innerText = tringleArea;
 }
